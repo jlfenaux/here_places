@@ -6,8 +6,6 @@ module HerePlaces
       @log = log
     end
 
-    protected
-
     def call_api(url_fragment, payload={})
       result = connection.get do |req|
         req.url url_fragment
