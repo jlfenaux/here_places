@@ -11,6 +11,7 @@ module HerePlaces
         req.url url_fragment
         req.params['app_code'] = HerePlaces.app_code
         req.params['app_id']   = HerePlaces.app_id
+        req.headers['Content-Language'] = HerePlaces.language
         payload.each do |key,value|
           req.params[key] = value
         end
