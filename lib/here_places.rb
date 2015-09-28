@@ -20,7 +20,7 @@ module HerePlaces
   def self.set_keys(app_id, app_code,language = 'en')
     @app_id = app_id
     @app_code = app_code
-    @langauge = language
+    @language = language
   end
 
   def self.app_id
