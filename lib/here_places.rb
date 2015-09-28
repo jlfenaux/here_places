@@ -30,4 +30,8 @@ module HerePlaces
   def self.app_code
     @app_code
   end
+  
+  def self.language
+    @language
+  end
 end
