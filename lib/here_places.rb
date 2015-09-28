@@ -17,9 +17,10 @@ module HerePlaces
   BASE_URL = 'http://places.nlp.nokia.com/'.freeze
   API_PREFIX = 'places/v1'.freeze
 
-  def self.set_keys(app_id, app_code)
+  def self.set_keys(app_id, app_code,language = 'en')
     @app_id = app_id
     @app_code = app_code
+    @langauge = language
   end
 
   def self.app_id
